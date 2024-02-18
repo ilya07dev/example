@@ -1,0 +1,167 @@
+.projects {
+  margin-top: 64px;
+  width: 396px;
+  background: rgba(15, 15, 19, 1);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.title {
+  //styleName: Header/H7;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.img {
+  width: 44px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  &_starknet {
+    background: linear-gradient(61.26deg, #0046cf 11.27%, #2d71f2 105.25%);
+  }
+  &_berachain {
+    background: linear-gradient(61.26deg, #ff2b2b 11.27%, #f83939 105.25%);
+  }
+  &_taiko {
+    background: linear-gradient(61.26deg, #ff2b2b 11.27%, #f83939 105.25%);
+  }
+  &_zksync {
+    background: linear-gradient(61.26deg, #0046cf 11.27%, #2d71f2 105.25%);
+  }
+}
+
+.btn {
+  border: 2px solid rgba(30, 30, 36, 1);
+  border-radius: 2px;
+  padding: 6px 20px; //styleName: Mini-button label;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 100%;
+  height: 32px;
+  letter-spacing: -0.009em;
+  text-align: left;
+  border-radius: 6px;
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &_svg {
+    border: 2px solid rgba(30, 30, 36, 1);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 49% 26% 25%;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  height: 38px;
+  padding: 10px 8px;
+  color: rgba(169, 169, 183, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  span {
+    &:last-child {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 49% 26% 25%;
+  padding: 7px 8px 13px 8px;
+  height: 54px;
+  border-bottom: 1px solid rgba(36, 36, 36, 1);
+  &:last-child {
+    border-bottom: none;
+    height: 35px;
+  }
+}
+
+.price {
+  margin-left: auto; //styleName: Mini-button label;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.009em;
+  text-align: right;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  &_title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.009em;
+    text-align: left;
+  }
+  &_text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(112, 112, 124, 1);
+  }
+}
+
+.desc {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  &_info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &_text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(112, 112, 124, 1);
+  }
+}

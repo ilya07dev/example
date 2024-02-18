@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  display: flex;
+  padding: 16px 46px 16px 24px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(30, 30, 36, 1);
+  height: 68px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+.link {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+  a {
+    transition: all 0.5s;
+    color: rgba(208, 208, 218, 1);
+  }
+
+  &_active {
+    a {
+      color: rgba(0, 98, 255, 1);
+    }
+  }
+}
+
+.right_menu {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &_text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.name {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.009em;
+  text-align: left;
+}
+
+.mail {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(112, 112, 124, 1);
+}
+
+.img {
+  width: 32px;
+  height: 32px;
+}

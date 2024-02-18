@@ -1,0 +1,552 @@
+.balance {
+  // position: relative;
+  padding-top: 29.5px;
+  margin-left: 3.9375vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.select {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  border: 2px solid rgba(30, 30, 36, 1);
+  display: flex;
+  align-items: center;
+  gap: 12.5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.009em;
+  text-align: left;
+  padding: 6px 20.5px 6px 20px;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.ball_orange {
+  background: linear-gradient(
+      0deg,
+      rgba(146, 26, 0, 0.5),
+      rgba(146, 26, 0, 0.5)
+    ),
+    radial-gradient(96% 96% at 70.4% 31.2%, #e8b532 0%, rgba(0, 2, 16, 0) 100%);
+
+  // box-shadow: 9.216733932495117px 14.746772766113281px 18.433467864990234px 0px
+  //     rgba(255, 125, 5, 0.95) inset,
+  //   0px 1.8433465957641602px 9.216733932495117px 0px rgba(255, 255, 255, 0.58)
+  //     inset,
+  //   0px 3.6866931915283203px 73.73387145996094px 0px rgba(248, 59, 0, 1);
+  box-shadow: 9.216733932495117px 14.746772766113281px 18.433467864990234px 0px
+      rgba(255, 125, 5, 0.95) inset,
+    0px 1.8433465957641602px 9.216733932495117px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 3.6866931915283203px 73.73387145996094px 0px rgba(248, 59, 0, 1);
+
+  width: 196.6px;
+  height: 196.6px;
+  border-radius: 100%;
+  bottom: 143px;
+  position: absolute;
+  left: 78px;
+  .block {
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    background: rgba(16, 15, 20, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2.825528860092163px 2.260423183441162px 0px
+        rgba(92, 7, 7, 0.13),
+      0px 6.7901387214660645px 5.432110786437988px 0px rgba(92, 7, 7, 0.19),
+      0px 12.785228729248047px 10.228182792663574px 0px rgba(92, 7, 7, 0.23),
+      0px 22.806665420532227px 18.245330810546875px 0px rgba(92, 7, 7, 0.27),
+      0px 42.65735626220703px 34.125885009765625px 0px rgba(92, 7, 7, 0.33),
+      0px 102.10578918457031px 81.68463134765625px 0px rgba(92, 7, 7, 0.46);
+
+    svg {
+      &:first-child {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    span {
+      position: absolute;
+      background-color: transparent;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 0em;
+      text-align: center;
+      bottom: 22px;
+    }
+  }
+}
+
+.ball_blue {
+  width: 101.61px;
+  height: 101.61px;
+  border-radius: 100%;
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #32bce8 0%,
+      rgba(135, 136, 149, 0) 100%
+    ),
+    linear-gradient(0deg, #1a53c1, #1a53c1);
+  box-shadow: 6.377878189086914px 10.204604148864746px 12.755756378173828px 0px
+      rgba(160, 246, 252, 0.63) inset,
+    0px 1.2755755186080933px 6.377878189086914px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 2.5511510372161865px 51.02302551269531px 0px rgba(54, 129, 218, 1);
+
+  position: absolute;
+  top: 308px;
+  right: 133px;
+  div {
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48.6px;
+    height: 48.6px;
+    background: rgba(16, 15, 20, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ball_red {
+  width: 145.79px;
+  height: 145.79px;
+  border-radius: 100%;
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #e83232 0%,
+      rgba(135, 136, 149, 0) 100%
+    ),
+    linear-gradient(0deg, #940000, #940000);
+  box-shadow: 9.216733932495117px 14.746772766113281px 18.433467864990234px 0px
+      rgba(255, 5, 5, 0.95) inset,
+    0px 1.8433465957641602px 9.216733932495117px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 3.6866931915283203px 73.73387145996094px 0px rgba(248, 0, 0, 1);
+  bottom: 142px;
+  position: absolute;
+  right: 158px;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 69.5px;
+    height: 69.5px;
+    border-radius: 100%;
+    background: rgba(16, 15, 20, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.range_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ball_eth {
+  width: 205.43px;
+  height: 205.43px;
+  border-radius: 100%;
+  background: linear-gradient(0deg, rgba(3, 0, 146, 0.9), rgba(3, 0, 146, 0.9)),
+    radial-gradient(96% 96% at 70.4% 31.2%, #3244e8 0%, rgba(0, 2, 16, 0) 100%);
+
+  // box-shadow: 10.210578918457031px 20.421157836914062px 102.10578918457031px 0px
+  //     rgba(219, 0, 255, 1) inset,
+  //   0px 2.0421156883239746px 10.210578918457031px 0px rgba(255, 255, 255, 0.58)
+  //     inset;
+  box-shadow: 10.210578918457031px 20.421157836914062px 102.10578918457031px 0px
+      rgba(219, 0, 255, 1) inset,
+    0px 2.0421156883239746px 10.210578918457031px 0px rgba(255, 255, 255, 0.58)
+      inset;
+
+  position: absolute;
+  top: 246px;
+  left: 255.8px;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 106.3px;
+    height: 106.3px;
+    border-radius: 100%;
+    background: rgba(16, 15, 20, 1);
+    box-shadow: 0px 2.825528860092163px 2.260423183441162px 0px
+        rgba(3, 2, 41, 0.07),
+      0px 6.7901387214660645px 5.432110786437988px 0px rgba(3, 2, 41, 0.1),
+      0px 12.785228729248047px 10.228182792663574px 0px rgba(3, 2, 41, 0.12),
+      0px 22.806665420532227px 18.245330810546875px 0px rgba(3, 2, 41, 0.14),
+      0px 42.65735626220703px 34.125885009765625px 0px rgba(3, 2, 41, 0.17),
+      0px 102.10578918457031px 81.68463134765625px 0px rgba(3, 2, 41, 0.24);
+
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      bottom: 31.75px;
+    }
+    svg {
+      position: absolute;
+      &:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(2) {
+        top: 26.79px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.ball_green {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 93, 146, 0.6),
+      rgba(0, 93, 146, 0.6)
+    ),
+    radial-gradient(96% 96% at 70.4% 31.2%, #a3e832 0%, rgba(0, 2, 16, 0) 100%);
+
+  box-shadow: 9.216733932495117px 14.746772766113281px 18.433467864990234px 0px
+      rgba(40, 255, 5, 0.46) inset,
+    0px 1.8433465957641602px 9.216733932495117px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 3.6866931915283203px 73.73387145996094px 0px rgba(0, 248, 99, 0.41);
+  width: 128.12px;
+  height: 128.12px;
+  border-radius: 100%;
+  position: absolute;
+  top: 234px;
+  left: 116px;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72.9px;
+    height: 72.9px;
+    border-radius: 100%;
+    background: rgba(16, 15, 20, 1);
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Inter;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      bottom: 18.6px;
+    }
+    svg {
+      position: absolute;
+      &:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(2) {
+        top: 19.8px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.ball_red_small {
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #3244e8 0%,
+      rgba(0, 2, 16, 0) 100%
+    ),
+    linear-gradient(0deg, #030092, #030092);
+  box-shadow: 11.044776916503906px 22.089553833007812px 55.223880767822266px 0px
+      rgba(255, 5, 5, 1) inset,
+    0px 2.2089552879333496px 11.044776916503906px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 4.417910575866699px 88.35821533203125px 0px rgba(248, 0, 119, 0.48);
+  width: 52.07px;
+  height: 52.07px;
+  border-radius: 100%;
+  top: 236px;
+  position: absolute;
+  left: 38.3px;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+}
+
+.balls {
+  position: absolute;
+  top: 17.5px;
+  left: 3.187vw;
+  width: 740px;
+  height: 711.28px;
+  left: 25vw;
+  top: 85px;
+}
+.sircle_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ball_violet {
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #3244e8 0%,
+      rgba(0, 2, 16, 0) 100%
+    ),
+    linear-gradient(0deg, #030092, #030092);
+  // box-shadow: 10.210578918457031px 16.336925506591797px 20.421157836914062px 0px
+  //     rgba(130, 5, 255, 0.95) inset,
+  //   0px 2.0421156883239746px 10.210578918457031px 0px rgba(255, 255, 255, 0.58)
+  //     inset,
+  //   0px 4.084231376647949px 81.68463134765625px 0px rgba(35, 0, 248, 1);
+  box-shadow: 10.210578918457031px 16.336925506591797px 20.421157836914062px 0px
+      rgba(130, 5, 255, 0.95) inset,
+    0px 2.0421156883239746px 10.210578918457031px 0px rgba(255, 255, 255, 0.1)
+      inset,
+    0px 4.084231376647949px 81.68463134765625px 0px rgba(35, 0, 248, 1);
+
+  width: 72.5px;
+  height: 72.5px;
+  border-radius: 100%;
+  position: absolute;
+  &_1 {
+    bottom: 255px;
+    left: -20px;
+  }
+  &_2 {
+    bottom: 172px;
+    right: 26.28px;
+  }
+  &_3 {
+    top: 212px;
+    right: 38.5px;
+  }
+  &_4 {
+    top: 155.7px;
+    left: 320px;
+    div {
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35.4px;
+      height: 35.4px;
+      background: rgba(16, 15, 20, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.sirlce_second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ball_gray {
+  width: 25px;
+  height: 24.5px;
+  background: linear-gradient(0deg, #424242, #424242),
+    radial-gradient(96% 96% at 70.4% 31.2%, #707070 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  box-shadow: 5.834615707397461px 9.3353853225708px 11.669231414794922px 0px
+      rgba(81, 80, 81, 0.95) inset,
+    0px 1.16692316532135px 5.834615707397461px 0px rgba(255, 255, 255, 0.18)
+      inset,
+    0px 2.3338463306427px 46.67692565917969px 0px rgba(209, 209, 209, 0.45);
+  position: absolute;
+  &_1 {
+    top: 337.5px;
+    left: 59.7px;
+  }
+  &_2 {
+    right: 47px;
+    bottom: 318.7px;
+  }
+  &_3 {
+    bottom: 137.8px;
+    right: 328px;
+  }
+}
+
+.icons {
+  position: absolute;
+  &_stacks {
+    top: 23px;
+  }
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.ball_rainbow {
+  position: absolute;
+}
+
+.ball_rainbow {
+  top: 221px;
+  right: 191px;
+  background: linear-gradient(0deg, #030092, #030092),
+    radial-gradient(96% 96% at 70.4% 31.2%, #3244e8 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 11.044776916503906px 22.089553833007812px 33.13433074951172px 0px
+      rgba(255, 5, 5, 1) inset,
+    0px 2.2089552879333496px 11.044776916503906px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 4.417910575866699px 88.35821533203125px 0px rgba(248, 0, 119, 0.48);
+  width: 72.5px;
+  height: 72.5px;
+}
+
+.bottom {
+  z-index: 0;
+  position: absolute;
+  bottom: 182px;
+  left: 314px;
+  background: linear-gradient(0deg, #030092, #030092),
+    radial-gradient(96% 96% at 70.4% 31.2%, #3244e8 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 14.959685325622559px 23.935495376586914px 29.919370651245117px 0px
+      rgba(130, 5, 255, 0.95) inset,
+    0px 2.9919369220733643px 14.959685325622559px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 5.9838738441467285px 119.67748260498047px 0px rgba(35, 0, 248, 1);
+  width: 63px;
+  height: 63px;
+  border-radius: 100%;
+}
+
+.left_dot {
+  width: 25px;
+  height: 25px;
+  top: 242px;
+  left: 249px;
+  background: linear-gradient(0deg, #030092, #030092),
+    radial-gradient(96% 96% at 70.4% 31.2%, #3244e8 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 5.834615707397461px 9.3353853225708px 11.669231414794922px 0px
+      rgba(130, 5, 255, 0.95) inset,
+    0px 1.16692316532135px 5.834615707397461px 0px rgba(255, 255, 255, 0.58)
+      inset,
+    0px 2.3338463306427px 46.67692565917969px 0px rgba(35, 0, 248, 1);
+}
+
+.right_dot {
+  width: 12.25px;
+  height: 12.25px;
+  top: 224px;
+  right: 297px;
+  background: linear-gradient(0deg, #424242, #424242),
+    radial-gradient(96% 96% at 70.4% 31.2%, #707070 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 5.834615707397461px 9.3353853225708px 11.669231414794922px 0px
+      rgba(81, 80, 81, 0.95) inset,
+    0px 1.16692316532135px 5.834615707397461px 0px rgba(255, 255, 255, 0.18)
+      inset,
+    0px 2.3338463306427px 46.67692565917969px 0px rgba(209, 209, 209, 1);
+}
+
+.under_bottom {
+  width: 25px;
+  height: 25px;
+  bottom: 137.8px;
+  right: 328px;
+  background: linear-gradient(0deg, #424242, #424242),
+    radial-gradient(96% 96% at 70.4% 31.2%, #707070 0%, rgba(0, 2, 16, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 5.834615707397461px 9.3353853225708px 11.669231414794922px 0px
+      rgba(81, 80, 81, 0.95) inset,
+    0px 1.16692316532135px 5.834615707397461px 0px rgba(255, 255, 255, 0.18)
+      inset,
+    0px 2.3338463306427px 46.67692565917969px 0px rgba(209, 209, 209, 0.45);
+}
+
+.bg {
+  position: absolute;
+  width: 1142.03px;
+  height: 596.42px;
+  top: 122px;
+  left: 201.01px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(97, 30, 215, 0.3) 0%,
+    rgba(42, 14, 91, 0) 100%
+  );
+}
