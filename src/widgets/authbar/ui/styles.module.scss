@@ -1,0 +1,38 @@
+.banner {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 80px;
+  max-width: 405px;
+}
+
+.title {
+  //styleName: h2;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.subtitle {
+  //styleName: Body 1/Body 1;
+  font-family: Karla;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.img {
+  width: 600px;
+  height: 639.29px;
+  margin-top: 55px;
+}

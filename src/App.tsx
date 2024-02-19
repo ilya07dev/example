@@ -1,27 +1,23 @@
-import { Balance } from "@/widgets/balance";
-import { Header } from "@/widgets/header";
-import { Projects } from "@/widgets/projects/ui/Projects";
-import { Referals } from "@/widgets/referals";
-import { Sidebar } from "@/widgets/sidebar";
-import { Statistic } from "@/widgets/statistic";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useUnit } from "effector-react";
+
+import { HomePage, AuthPage } from "@/pages";
+
+import * as AuthModel from "@/widgets/auth/model";
 
 function App() {
+  const navigate = useNavigate();
+  const [isAuth] = useUnit([AuthModel.$isAuth]);
+
+  if (isAuth) {
+    navigate("/home");
+  }
+
   return (
-    <main>
-      <Header />
-      <section>
-        <Sidebar />
-        <div className="container">
-          {" "}
-          <Balance />
-          <Statistic />
-        </div>
-        <div className="body">
-          <Referals />
-          <Projects />
-        </div>
-      </section>
-    </main>
+    <Routes>
+      <Route path="/" element={<AuthPage />} />
+      <Route path="/home" element={<HomePage />} />
+    </Routes>
   );
 }
 
